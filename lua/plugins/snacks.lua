@@ -10,7 +10,7 @@ return {
     bigfile = { enabled = true },
     dashboard = { enabled = true },
     explorer = { enabled = true },
-    indent = { enabled = false },
+    indent = { enabled = true },
     input = { enabled = true },
     picker = { enabled = true },
     notifier = { enabled = true },
@@ -21,6 +21,6 @@ return {
     words = { enabled = true },
   },
   keys = {
-    {"<leader>e", function () Snacks.explorer() end, desc = "Buscador"},
+    { "<leader>e", function() Snacks.explorer() end, desc = "Buscador" },
   },
 }
