@@ -8,6 +8,11 @@ vim.opt.cursorline = true         -- Resalta la línea actual
 vim.opt.signcolumn = "yes"        -- Siempre muestra la columna de iconos a la izquierda
 vim.opt.fillchars = { eob = " " }
 
+-- Keymaps para moverme entre splits
+vim.keymap.set('n', '<A-h>', '<C-w>h')
+vim.keymap.set('n', '<A-j>', '<C-w>j')
+vim.keymap.set('n', '<A-k>', '<C-w>k')
+vim.keymap.set('n', '<A-l>', '<C-w>l')
 
 -- [[ INDENTACIÓN ]]
 vim.opt.expandtab = true -- Espacios > Tabs
@@ -61,3 +66,6 @@ fix_tsx_colors()
 vim.api.nvim_create_autocmd("ColorScheme", {
   callback = fix_tsx_colors,
 })
+
+-- Mapeo para que la ñ cierre la terminal desde adentro
+vim.keymap.set('t', 'ñ', [[<C-\><C-n><cmd>lua Snacks.terminal.toggle()<CR>]], { desc = "Cerrar terminal con ñ" })

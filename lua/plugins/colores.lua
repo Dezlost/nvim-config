@@ -5,7 +5,7 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-      -- vim.cmd.colorscheme "kanagawa-dragon"
+       vim.cmd.colorscheme "kanagawa-dragon"
     end
   },
 
@@ -43,7 +43,7 @@ return {
         -- Aquí puedes elegir el estilo: 'sol' (rojo), 'canyon' (naranja), 'night' (oscuro)
         theme = "sol",
       })
-      vim.cmd("colorscheme oasis-night") -- O "oasis-night" si prefieres el oscuro
+      -- vim.cmd("colorscheme oasis-night") -- O "oasis-night" si prefieres el oscuro
     end,
   },
 }

@@ -45,5 +45,6 @@ return {
     -- otro
     { "<leader>th",      function() Snacks.picker.colorschemes() end,                            desc = "Colorschemes" },
     { "<leader>gg",      function() Snacks.lazygit() end,                                        desc = "Lazygit" },
+    { "ñ",           function() Snacks.terminal() end,                                       desc = "Toggle Terminal" },
   },
 }
