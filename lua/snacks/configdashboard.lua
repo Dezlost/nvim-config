@@ -7,7 +7,7 @@ return {
   width = 80,
   row = nil,                                                                   -- dashboard position. nil for center
   col = nil,                                                                   -- dashboard position. nil for center
-  pane_gap = 4,                                                                -- empty columns between vertical panes
+  pane_gap = 6,                                                                -- empty columns between vertical panes
   autokeys = "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", -- autokey sequence
   -- These settings are used by some built-in sections
   preset = {
@@ -63,16 +63,15 @@ return {
     end,
   },
   sections = {
-    { section = "header" },
+    { section = "header",padding = 4 },
     {
       pane = 2,
       section = "terminal",
-      cmd = "pokemon-colorscripts -n umbreon -s --no-title; sleep .1",
-      height = 15,
-      indent = 4,
-      random = 10,
+      cmd = "cava",
+      height = 8,
+      padding = 1
     },
-    { section = "keys", gap = 1, padding = 1 },
+    { section = "keys", gap = 1, padding = 2 },
     { pane = 2, icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
     { pane = 2, icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
     {
