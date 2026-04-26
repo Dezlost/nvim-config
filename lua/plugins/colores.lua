@@ -5,7 +5,7 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-       vim.cmd.colorscheme "kanagawa-dragon"
+      --  vim.cmd.colorscheme "kanagawa-dragon"
     end
   },
 
@@ -46,4 +46,17 @@ return {
       -- vim.cmd("colorscheme oasis-night") -- O "oasis-night" si prefieres el oscuro
     end,
   },
+  {
+    {
+      "ayu-theme/ayu-vim",
+      lazy = false,
+      priority = 1000,
+      config = function()
+      -- "light", "mirage", "dark"
+        vim.g.ayucolor = "dark"
+
+        vim.cmd("colorscheme ayu")
+      end,
+    },
+  }
 }
