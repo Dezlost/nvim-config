@@ -4,7 +4,7 @@ return {
   ---@field enabled? boolean
   ---@field sections snacks.dashboard.Section
   ---@field formats table<string, snacks.dashboard.Text|fun(item:snacks.dashboard.Item, ctx:snacks.dashboard.Format.ctx):snacks.dashboard.Text>
-  width = 80,
+  width = 70,
   row = nil,                                                                   -- dashboard position. nil for center
   col = nil,                                                                   -- dashboard position. nil for center
   pane_gap = 6,                                                                -- empty columns between vertical panes
