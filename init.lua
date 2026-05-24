@@ -37,15 +37,6 @@ vim.keymap.set("n", "<leader>th", function()
   })
 end, { desc = "Mis temas favoritos" })
 
--- Atajo para formatear con Conform
-vim.keymap.set("n", "<leader>f", function()
-  require("conform").format({
-    lsp_fallback = true,
-    async = false,
-    timeout_ms = 500,
-  })
-end, { desc = "Formatear archivo (Manual)" })
-
 -- Colores para TSX (Solución permanente)
 local function fix_tsx_colors()
   local groups = {

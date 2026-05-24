@@ -3,7 +3,7 @@ return {
 	lazy = false,
 	build = ":TSUpdate",
 	config = function()
-		local lenguajes = { "rust", "javascript", "zig", "python", "typescript", "tsx", "html", "css","prisma" }
+		local lenguajes = { "rust", "javascript", "zig", "python", "typescript", "tsx", "html", "css","prisma","http" }
 		require("nvim-treesitter").install(lenguajes)
 		vim.api.nvim_create_autocmd("FileType", {
 			pattern = lenguajes,

@@ -33,30 +33,23 @@ return {
       -- vim.cmd.colorscheme "catppuccin-mocha"
     end
   },
-
   {
-    "uhs-robert/oasis.nvim",
+    "ayu-theme/ayu-vim",
     lazy = false,
     priority = 1000,
     config = function()
-      require("oasis").setup({
-        -- Aquí puedes elegir el estilo: 'sol' (rojo), 'canyon' (naranja), 'night' (oscuro)
-        theme = "sol",
-      })
-      -- vim.cmd("colorscheme oasis-night") -- O "oasis-night" si prefieres el oscuro
+      -- "light", "mirage", "dark"
+      -- vim.g.ayucolor = "dark"
+
+      --vim.cmd("colorscheme ayu")
     end,
   },
   {
-    {
-      "ayu-theme/ayu-vim",
-      lazy = false,
-      priority = 1000,
-      config = function()
-      -- "light", "mirage", "dark"
-        vim.g.ayucolor = "dark"
-
-        vim.cmd("colorscheme ayu")
-      end,
-    },
+    "rose-pine/neovim",
+    name = "rose-pine",
+    config = function()
+      vim.cmd("colorscheme rose-pine")
+    end
   }
+
 }
